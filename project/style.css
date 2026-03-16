@@ -1,0 +1,346 @@
+    html {
+  scroll-behavior: auto;
+  cursor: default;
+}
+body{
+  background: linear-gradient(to bottom, #e8f0ff, #ffffff);
+}
+.region{
+    margin-bottom:200px;
+}
+
+
+    #headerblock1 h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    #headerblock1 p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    #lista.loading{
+    filter: blur(6px);
+    transition: filter 0.3s;
+    }
+
+
+    #spritechanger h1{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background: linear-gradient(90deg, rgb(0, 255, 221), rgb(0, 115, 255), rgb(38, 0, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+#gotonext{
+    display: block;
+    margin: 20px auto;
+
+    padding: 12px 24px;
+
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+
+    transition: transform 0.15s ease,
+                box-shadow 0.15s ease,
+                background 0.3s ease;
+}
+
+#gotonext:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #000, #444);
+}
+
+#gotonext:active{
+    transform: translateY(1px);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+
+
+#loading-overlay{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#loading-overlay.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+#loading-blur{
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.15);
+}
+
+#redloading{
+    position: relative;
+    z-index: 2;
+    width: 140px;
+    max-width: 40vw;
+    display: block;
+}
+
+    #headerblock2 h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    #headerblock2 p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+
+    
+    #headerblock3 h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    #headerblock3 p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+
+       #headerblock4 h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    #headerblock4 p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+
+    
+       #headerblock5 h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    #headerblock5 p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+
+           #headerblock6 h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    #headerblock6 p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+
+    
+           #headerblock7 h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    #headerblock7 p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+
+               #headerblock8 h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    #headerblock8 p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    
+               #headerblock9 h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    #headerblock9 p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+
+
+    #buttonspritechange{
+        margin-bottom: 30px;
+        color: rgb(0, 0, 0);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-radius: 4px;
+        transition: 0.5s;
+    }
+    #buttonspritechange:hover{
+        margin-bottom: 30px;
+        color: rgb(0, 0, 0);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-radius: 5px;
+    border-image: linear-gradient(45deg, rgb(213, 244, 255), rgb(255, 255, 255), rgb(171, 238, 255), cyan, blue) 1;
+
+    }
+    .sprite-button{
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 16px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #1a1a1a;
+    background: white;
+
+    border: 2px solid #dbe9ff;
+    border-radius: 8px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+
+    cursor: pointer;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.sprite-button:hover{
+    transform: translateY(-2px);
+
+    border-color: #4aa3ff;
+
+    background: #f5f9ff;
+
+    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
+.sprite-button:active{
+    transform: translateY(1px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+[id^="headerblock"]{
+    margin-top: 900px;
+}
+
+#hometitle{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#hometitle a{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: #333;
+}
+
+#startbutton{
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 16px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #1a1a1a;
+    background: white;
+
+    border: 2px solid #dbe9ff;
+    border-radius: 8px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+
+    cursor: pointer;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+#startbutton:hover{
+    transform: translateY(-2px);
+
+    border-color: #4aa3ff;
+
+    background: #f5f9ff;
+
+    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
+#startbutton:active{
+    transform: translateY(1px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+#shinyiconchanger{
+    width: 20px;
+        transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+#shinyiconchanger:hover{
+        transform: translateY(-2px)
+}
+
+
+
+#errorPopup{
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff3b3b;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-family: system-ui;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  z-index: 9999;
+}
+
+#errorPopup.show{
+  opacity: 1;
+}
+
+.shake{
+  animation: shake 0.4s;
+}
+
+@keyframes shake{
+  0%{transform: translateX(0);}
+  25%{transform: translateX(-10px);}
+  50%{transform: translateX(10px);}
+  75%{transform: translateX(-6px);}
+  100%{transform: translateX(0);}
+}
+
+#lista9 img{
+    width: 200px;
+}
